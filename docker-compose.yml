@@ -1,0 +1,63 @@
+cs01:
+  hostname: cs01
+  hostname: cs02
+  hostname: cs03
+  hostname: cc01
+  name: cs01
+  build: .
+  command: tail -f /dev/null
+  ports:
+   - 8300 
+   - 8301 
+   - 8302 
+   - 8400 
+   - 8500 
+   - 8600
+cs02:
+  hostname: cs01
+  hostname: cs02
+  hostname: cs03
+  hostname: cc01
+  name: cs01
+  name: cs02
+  build: .
+  command: tail -f /dev/null
+  ports:
+   - 8300 
+   - 8301 
+   - 8302 
+   - 8400 
+   - 8500 
+   - 8600
+cs03:
+  hostname: cs01
+  hostname: cs02
+  hostname: cs03
+  hostname: cc01
+  name: cs01
+  name: cs03
+  build: .
+  command: tail -f /dev/null
+  ports:
+   - 8300 
+   - 8301 
+   - 8302 
+   - 8400 
+   - 8500 
+   - 8600
+cc01:
+  hostname: cs01
+  hostname: cs02
+  hostname: cs03
+  hostname: cc01
+  name: cs01
+  name: cc01
+  build: .
+  command: tail -f /dev/null
+  ports:
+   - 8300 
+   - 8301 
+   - 8302 
+   - 8400 
+   - 8500 
+   - 8600
